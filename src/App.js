@@ -68,7 +68,23 @@ function App() {
           </div>
         </div>
        </div>
-        ) : ('')}
+        ) : (
+          <div className="col" ontouchstart="this.classList.toggle('hover');">
+          <div className="container">
+              <div className="front">
+                  <div className="inner">
+                      <p>Weather App</p>
+                      <span>Get live world wide weather.</span>
+                  </div>
+              </div>
+              <div className="back">
+                  <div className="inner">
+                      <p>Seach for the country, city or town on the search bar...</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        )}
       </main>
     </div>
   );
